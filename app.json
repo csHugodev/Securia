@@ -1,16 +1,28 @@
-
 {
   "id": "securia",
   "author": "cshugo",
   "version": "1.0.0",
   "title": "Securia",
-  "description": "A minimal, deterministic password generator made with Flask.",
-  "image": "securia:latest",
+  "description": "A minimal, deterministic password generator made with love by cshugo. Based on the open-source work of pagoru.",
+  "icon": "https://raw.githubusercontent.com/csHugodev/Securia/master/static/psw_icon-fav.ico",
   "index": "/",
-  "scheme": "http",
   "port_map": {
     "5000/tcp": "2801"
   },
-  "icon": "https://raw.githubusercontent.com/csHugodev/Securia/refs/heads/master/static/psw_icon-fav.ico",
-  "category": "Utilities"
+  "scheme": "http",
+  "arch": [
+    "amd64",
+    "arm64"
+  ],
+  "image": "cshugodev/securia:latest",
+  "env": [],
+  "panel": {
+    "url": "http://[HOST]:2801/",
+    "open_in": "new_tab"
+  },
+  "categories": [
+    "Utilities"
+  ],
+  "thumbnail": "",
+  "description_long": "Securia is a deterministic password generator that lets you create strong, repeatable passwords based on your secret and the service name. Your passwords are never stored, and everything happens locally in your browser."
 }
