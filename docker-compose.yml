@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  securia:
+    container_name: securia
+    build: .
+    ports:
+      - "2801:5000"
+    restart: unless-stopped

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='psw_icon-fav.ico') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="background" class="background"></div>
+
+    <div class="container">
+        <h2>Password Generator</h2>
+        <input id="secret" type="password" placeholder="Secret key">
+        <input id="service" type="text" placeholder="Service">
+        <input id="length" type="number" placeholder="Length" value="32" min="8" max="32">
+        <select id="version">
+            <option value="1">Version 1</option>
+        </select>
+        <div class="output-box" id="password-box">
+            <div id="password-output" class="output-text">Your password will appear here</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            Created with <span class="heart">❤️</span> by
+            <a href="https://github.com/csHugodev/" target="_blank" class="footer-link">cshugo</a><br>
+            Based on the
+            <a href="https://github.com/pagoru/sss.pagoru.es" target="_blank" class="footer-link">open source project</a> by
+            <a href="https://github.com/pagoru" target="_blank" class="footer-link">pagoru</a>
+        </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

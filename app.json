@@ -1,0 +1,16 @@
+
+{
+  "id": "securia",
+  "author": "cshugo",
+  "version": "1.0.0",
+  "title": "Securia",
+  "description": "A minimal, deterministic password generator made with Flask.",
+  "image": "securia:latest",
+  "index": "/",
+  "scheme": "http",
+  "port_map": {
+    "5000/tcp": "2801"
+  },
+  "icon": "http://localhost:2801/static/psw_icon-fav.ico",
+  "category": "Utilities"
+}
