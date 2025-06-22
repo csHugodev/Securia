@@ -11,6 +11,6 @@
   "port_map": {
     "5000/tcp": "2801"
   },
-  "icon": "http://localhost:2801/static/psw_icon-fav.ico",
+  "icon": "https://raw.githubusercontent.com/csHugodev/Securia/refs/heads/master/static/psw_icon-fav.ico",
   "category": "Utilities"
 }
