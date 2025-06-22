@@ -1,4 +1,14 @@
-# .gitignore
+# Python
 __pycache__/
 *.pyc
+
+# Virtual environments
+venv/
+.env
+
+# IDE/editor settings
 .idea/
+*.iml
+
+# OS files
+.DS_Store
